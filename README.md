@@ -35,8 +35,12 @@ The output is generated as a static site in the `_site` directory.
 The main template is found in `_layouts`. All includes including the navigation is in the `_includes` directory.
 
 
-NOTE: The instructions below are based on gh-pages v2 which are not released yet, in the meantime, use the isntructions on https://github.com/malmostad/wag
+```
 
+NOTE: The instructions below are based on gh-pages v2 which are not released yet,
+      in the meantime, use the isntructions on https://github.com/malmostad/wag
+
+```
 
 ## Editing Sass and Coffeescript
 There are a few asset files used for the WAG itself. The source is available in the `stylesheets` and `javascripts` directories. The files are compiled during editing if you have Jekyll running.
