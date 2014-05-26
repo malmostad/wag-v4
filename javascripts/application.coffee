@@ -1,17 +1,6 @@
 # ---
 # ---
 $ ->
-  # Prevent the custom Google Analytics event handler
-  window.gaDelayEvent = (a, b) ->
-    return
-
-  # Prevent links in masthead to execute
-  $("#malmo-masthead").on 'click', 'a[href!="#"][id!="masthead-search"], input[class~=btn]', (event) ->
-    return true if $(@).parents("#nav-triggers").length
-    event.preventDefault()
-    alert "This is an intranet resource"
-    return false
-
   # Example for autocompete
   $address = $("#street-name")
   if $address.length
@@ -31,7 +20,7 @@ $ ->
       minLength: 2
 
   # Prevent submissions of dummy forms
-  $("form").submit (event) ->
+  $(".example form").submit (event) ->
     alert "Only a dummy form"
     event.preventDefault()
 
