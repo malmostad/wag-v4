@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <title>Getting Started – The City of Malmö</title>
+    <!--[if IE]><meta content='IE=edge' http-equiv='X-UA-Compatible'/><![endif]-->
+    <!--[if lte IE 8]><script src='//assets.malmo.se/external/v4/html5shiv-printshiv.js' type='text/javascript'></script><![endif]-->
+    <link href='//assets.malmo.se/external/v4/malmo.css' media='all' rel='stylesheet' type='text/css'/>
+    <link rel='stylesheet' href='/wag-external-v4/stylesheets/application.css'>
+    <!--[if lte IE 8]><link href='//assets.malmo.se/external/v4/legacy/ie8.css' media='all' rel='stylesheet' type='text/css'/><![endif]-->
+    <noscript><link href="//assets.malmo.se/external/v4/icons.fallback.css" rel="stylesheet"></noscript>
+    <link rel='icon' type='image/x-icon' href='//assets.malmo.se/external/v4/favicon.ico'/>
+  </head>
+  <body class="mf-v4">
+    <div class='wrapper'>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="/wag-external-v4/">Start</a></li>
+          <li><a href="/wag-external-v4/">Web Applications Guidelines</a></li>
+          <li><a href="/wag-external-v4/">External v4</a></li>
+        </ol>
+      </nav>
+      <section class="warning beta">
+        Note: WAG v4 is currently an Editor's Draft. It will be a Working Draft from 2014-06-01 until 2014-09-01. This means that breaking changes can be introduced until 2014-09-01.
+      </section>
+
+      <article class="body-copy" role="main">
+        <h1 id="getting-started">Getting Started</h1>
+
+<p>The term “global assets” refers to the JavaScript, stylesheet, web fonts and icons that are share by all our external web applications. The global asset files are served from a public available asset server, assets.malmo.se. Each application will likely have its own additional assets for application specific styling and functionality.</p>
+
+<h2 id="include-the-global-assets-in-your-application">Include the Global Assets In Your Application</h2>
+<p>To use the global assets, you need to include a stylesheet and a JavaScript file in your application as well as a favicon reference and a few conditional includes for legacy browsers. Be sure to use the HTML5 doctype and the <code>X-UA-Compatible</code> meta tag to get it all working.</p>
+
+<p>The start of your HTML code should look like this:</p>
+
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&#39;utf-8&#39;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">&#39;width=device-width, initial-scale=1.0&#39;</span> <span class="na">name=</span><span class="s">&#39;viewport&#39;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Låneregler – Malmö stad<span class="nt">&lt;/title&gt;</span>
+    <span class="c">&lt;!--[if IE]&gt;&lt;meta content=&#39;IE=edge&#39; http-equiv=&#39;X-UA-Compatible&#39;/&gt;&lt;![endif]--&gt;</span>
+    <span class="c">&lt;!--[if lte IE 8]&gt;&lt;script src=&#39;//assets.malmo.se/external/v4/html5shiv-printshiv.js&#39; type=&#39;text/javascript&#39;&gt;&lt;/script&gt;&lt;![endif]--&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&#39;//assets.malmo.se/external/v4/malmo.css&#39;</span> <span class="na">media=</span><span class="s">&#39;all&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">href=</span><span class="s">&#39;/your_own_javascript.css&#39;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--[if lte IE 8]&gt;&lt;link href=&#39;//assets.malmo.se/external/v4/legacy/ie8.css&#39; media=&#39;all&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;/&gt;&lt;![endif]--&gt;</span>
+    <span class="nt">&lt;noscript&gt;&lt;link</span> <span class="na">href=</span><span class="s">&quot;//assets.malmo.se/external/v4/icons.fallback.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;&lt;/noscript&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&#39;icon&#39;</span> <span class="na">type=</span><span class="s">&#39;image/x-icon&#39;</span> <span class="na">href=</span><span class="s">&#39;//assets.malmo.se/external/v4/favicon.ico&#39;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&quot;mf-v4&quot;</span><span class="nt">&gt;</span>
+  ...</code></pre></div>
+
+<p>As you can see in the example, your own stylesheet should be added after the global stylesheet. Your own stylesheet contains everything your application needs that is not contained in the global assets. Application specific files are not deployed to the global asset server, those are served directly from your applications web server.</p>
+
+<p>The <code>viewport</code> meta tag must be included to get a responsive application. You <em>must not</em> set the <code>maximum-scale</code> value in the <code>viewport</code> meta tag; it is not our business to decide if the user wants to zoom in or not on a narrow device.</p>
+
+<p>JavaScript files should be included just before the end <code>body</code> tag:</p>
+
+<div class="highlight"><pre><code class="html">...
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&#39;//assets.malmo.se/external/v4/malmo.js&#39;</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&#39;/your_own_javascript.js&#39;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></div>
+
+<p>Place your own JavaScript file right after the global one as shown above.</p>
+
+<h2 id="the-page-title">The Page Title</h2>
+<p>The <code>&lt;title&gt;</code> for a web page should have the following components in the given order:</p>
+
+<ol>
+  <li>The title of the page</li>
+  <li>A separator in form of an endash (–, <code>&amp;#x2013;</code>) with a space on each side</li>
+  <li>“Malmö stad” as the suffix</li>
+</ol>
+
+<p>This gives us “Låneregler – Malmö stad”.</p>
+
+<h2 id="compliance-levels">Compliance Levels</h2>
+<p>There are three compliance levels in the WAG:</p>
+
+<ol>
+  <li>Full compliance</li>
+  <li>Full compliance, except for forms</li>
+  <li>The application is only including the global masthead and footer</li>
+</ol>
+
+<p>Compliance level 1 is required by web applications that are built for The City of Malmö.</p>
+
+<p>If your web applications can’t be compliant with level 1, please contact webbteamet@malmo.se to discuss an exception. An exception must be made in the phase of procurement or at the beginning of a project.</p>
+
+<h3 id="compliance-level-2">Compliance Level 2</h3>
+<p>Compliance Level 2 is for web applications with complex forms that cannot be adapted to use the markup structure specified in the <em>Forms</em> section. If you have an approved exception to use Compliance Level 2, follow the coding instructions in the <em>Forms</em> section. It is your responsibility as a vendor or consultant to ensure that the forms are responsive, accessible, nice looking and user friendly.</p>
+
+<h3 id="compliance-level-3">Compliance Level 3</h3>
+<p>Compliance Level 3 is for web applications that for some reason can’t be changed at all when it comes to the user interface. To qualify for this level, the application should not be a core service for The City of Malmö. Those applications will only include the global masthead and footer and Google Analytics tracking. If you have an approved exception to use Compliance Level 3, change:</p>
+
+<ol>
+  <li><code>malmo.css</code> to <code>masthead_standalone.css</code></li>
+  <li><code>malmo.js</code> to <code>masthead_standalone.js</code></li>
+</ol>
+
+<h2 id="alternativ-asset-bundles">Alternativ Asset Bundles</h2>
+<p>If your application already includes the latest version of jQuery 1.x and you for some reason can’t exclude it, change <code>malmo.js</code> to <code>malmo_without_jquery.js</code> or <code>masthead_standalone_without_jquery.js</code> for Compliance level 3 applications.</p>
+
+<h2 id="optimize-your-own-assets">Optimize Your Own Assets</h2>
+<p>Your own stylesheets and JavaScript code must be concatenated into single files and then minified. If your application has files for older versions of Internet Explorer, include them in conditional comments.</p>
+
+<p>You must serve your assets with gzip/deflate compression from the web server with HTTP caching headers optimized.</p>
+
+<p>If you’re using AMD loading assets, all individual files must be minified and you need to optimize the balance between the number of HTTP request and the size of the files.</p>
+
+<h2 id="the-masthead-and-footer">The Masthead and Footer</h2>
+<p>The masthead and the footer, as seen on this page, are automatically included on every page when you use the global assets. The <code>margin-top</code> on the <code>body</code> of your application must leave room for the masthead.</p>
+
+<p>The masthead is responsive and you must set the <code>viewport</code> meta tag in your application for it to work (see above).</p>
+
+<p>For an application, or a single view, that best utilizes the viewport’s full height, such as our <a href="http://www.malmo.se/karta">map service</a>, it is possible to omit the global footer by adding a <code>no-footer</code> class to your <code>body</code> tag. Discuss with webbteamet@malmo.se first. The global masthead must always be present.</p>
+
+<h2 id="components-available-in-the-global-assets">Components Available in the Global Assets</h2>
+<p>The global assets are used by many applications and since they have a long life-cycle, we are cautious when it comes to include extensive UI components and frameworks in the bundle. If you have need for components not included, add them to your own code and be sure to maintain and update them.</p>
+
+<p>jQuery version 1.11.x is included in the global assets.</p>
+
+<p>Third party JavaScript components included can be seen in the <code>vendor</code> directory in the global assets repository (see <em>Global Assets Internals</em> below).</p>
+
+<p>The comment at the top of the <code>jquery-ui.custom.min.js</code> file in the vendor directory lists jQuery UI components included.</p>
+
+<p>From Bootstrap v3, we have include forms, buttons, pagination and the dropdown. For details, see <code>bootstrap_custom.css.scss</code> in global asset’s <code>/app/assets/stylesheets/</code> directory.</p>
+
+<h2 id="sass-utilities">Sass Utilities</h2>
+
+<p>If you’re using <a href="http://sass-lang.com/">Sass</a>—which we encourage—for developing and building your application specific stylesheets, you should incorporate our shared Sass utilities we provide in the <a href="https://github.com/malmostad/shared_assets">Shared Assets</a> repository. Common style variables such as colors and fonts are defined there and you get access to Sass mixins to create your <a href="/wag-external-v4/grids_and_responsive_design">responsive grids</a>.</p>
+
+<p>Information about using the Sass utilities in your own code is provided in the repositories readme.</p>
+
+<h2 id="google-analytics">Google Analytics</h2>
+<p>Google Analytics tracking is included in the global assets and statistics are collected to The City of Malmö’s account. This is important so we can analyze traffic and user behavior across all off our services. You <em>must not</em> initiate other Google Analytics accounts in your application.</p>
+
+<p>If you need to do custom event tracking in your application, use your applications technical name as a prefix for the event names so we don’t get Google Analytics events with colliding names.</p>
+
+<p>To prevent data from your development, test and staging environments to be collected in our production GA account, add a <code>development</code>, <code>test</code> or <code>staging</code> class to the <code>body</code> tag. The data will then be collected in our test account.</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&#39;development&#39;</span><span class="nt">&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&#39;test&#39;</span><span class="nt">&gt;</span></code></pre></div>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;body</span> <span class="na">class=</span><span class="s">&#39;staging&#39;</span><span class="nt">&gt;</span></code></pre></div>
+
+<h2 id="global-assets-internals">Global Assets Internals</h2>
+<p>The source code for the <a href="https://github.com/malmostad/global_assets">global assets is available on Github</a>. Check the release tags to see which version is deployed in production.</p>
+
+      </article>
+
+      <nav class="content">
+  <h1>WAG External v4</h1>
+  <ul>
+    <li><a href="/wag-external-v4/">Introduction</a></li>
+    <li><a href="/wag-external-v4/getting_started/">Getting Started</a></li>
+    <li><a href="/wag-external-v4/grids_and_responsive_design/">Grids and Responsive Design</a></li>
+    <li><a href="/wag-external-v4/navigation_and_pagination/">Navigation &amp; Pagination</a></li>
+    <li><a href="/wag-external-v4/typography_and_articles/">Typography &amp; Articles</a></li>
+    <li><a href="/wag-external-v4/tables/">Tables</a></li>
+    <li><a href="/wag-external-v4/colors/">Colors</a></li>
+    <li><a href="/wag-external-v4/forms_buttons_and_messages/">Forms, Buttons &amp; Messages</a></li>
+    <li><a href="/wag-external-v4/other_page_elements/">Other Page Elements</a></li>
+  </ul>
+</nav>
+
+
+      <aside class="contact-us vcard basic">
+        <h1>Contact Us</h1>
+        <div class="fn">The City of Malmö's web team, <span class="email">webbteamet@malmo.se</span>.</div>
+      </aside>
+    </div>
+    <script src='//assets.malmo.se/external/v4/malmo.js'></script>
+    <script src='/wag-external-v4/javascripts/application.js'></script>
+  </body>
+</html>
