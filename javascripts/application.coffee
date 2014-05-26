@@ -1,5 +1,5 @@
----
----
+# ---
+# ---
 $ ->
   # Prevent the custom Google Analytics event handler
   window.gaDelayEvent = (a, b) ->
