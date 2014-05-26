@@ -49,7 +49,7 @@ before committing and pushing your changes to GitHub. This will minify the JavaS
 
 
 ## Upgrade The Shared Assets
-See the instructions in our [shared assets](malmostad/shared_assets) repository.
+See the instructions in our [shared assets](https://github.com/malmostad/shared_assets) repository.
 
 ## License
 Released under AGPL version 3.
