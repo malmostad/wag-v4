@@ -8,7 +8,6 @@ Content is written in markdown using the [kramdown](http://kramdown.rubyforge.or
 
 The publishing is using [GitHub Pages](https://pages.github.com/) witch is a hook that publish a [Jekyll](http://jekyll.io) site when something in the `gh-pages` branch is saved.
 
-
 ## Development and Extensive Editing
 
 You need Ruby 2.x with bundler on your machine.
@@ -34,6 +33,9 @@ The output is generated as a static site in the `_site` directory.
 
 ## Editing The Templates and the Navigation
 The main template is found in `_layouts`. All includes including the navigation is in the `_includes` directory.
+
+
+NOTE: The instructions below are based on gh-pages v2 which are not released yet, in the meantime, use the isntructions on https://github.com/malmostad/wag
 
 
 ## Editing Sass and Coffeescript
