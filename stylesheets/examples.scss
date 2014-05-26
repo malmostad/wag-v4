@@ -1,0 +1,92 @@
+h2 + .example {
+  margin-top: .5em;
+}
+
+.example {
+  position: relative;
+  border: $border;
+  border-bottom: 0;
+  padding: 2em 1.4em 1.4em;
+  margin-bottom: 0;
+  article {
+    margin: 0;
+  }
+  ul.pagination {
+    margin: 0;
+    padding: 0;
+  }
+  a.btn {
+    text-decoration: none;
+  }
+  .breadcrumbs, .breadcrumbs ol {
+    margin: 0;
+    padding: 0;
+  }
+  aside.basic:not(.contact-us) {
+    max-width: 15em;
+  }
+  aside.contact-us {
+    margin-top: 0;
+  }
+}
+
+.example::before, .highlight code::before {
+  position: absolute;
+  top: .2em;
+  left: .4em;
+  content: 'example';
+  color: #999;
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: .2em
+}
+
+.grid-example {
+  @include clearfix();
+  article, nav, aside {
+    @include columns(12);
+    border: #c00 1px dashed;
+    height: 15em;
+    padding: .5em;
+    margin-bottom: 1em;
+  }
+  @media (min-width: 40em) {
+    article {
+      @include columns(6);
+    }
+    nav {
+      @include columns(6, true);
+    }
+    aside {
+      @include columns(12);
+    }
+  }
+  @media (min-width: 50em) {
+    article {
+      @include columns(6);
+      margin-top: 0;
+    }
+    nav {
+      @include columns(3);
+    }
+    aside {
+      @include columns(3, true);
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  .example {
+    padding: 2em .6em 1.4em;
+  }
+  .example .input-append input {
+    max-width: 10em;
+  }
+}
+
+@media (max-width: 25em) {
+  .example.buttons .btn {
+    margin-bottom: .5em;
+  }
+}

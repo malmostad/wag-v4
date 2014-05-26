@@ -1,0 +1,26 @@
+# jekyll serve --baseurl "" --watch
+name: "Web Application Guidelines, External v4"
+markdown: kramdown
+highlighter: pygments
+exclude: [Gemfile, Gemfile.lock, .gitignore, README.md, COPYING, build.sh]
+baseurl: /wag/external/v4
+# cdn_url: //assets.malmo.se/external/v4
+cdn_url: //www.local.malmo.se:3001/assets
+permalink: /:categories/:title
+relative_permalinks: false
+
+sass:
+  sass_dir: stylesheets
+  # style: :expanded
+  style: :compressed
+
+coffee:
+  coffee_dir: javascripts
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
