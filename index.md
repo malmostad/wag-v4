@@ -15,7 +15,7 @@ Version 4 for The City of Malmö's external web
 
 For these reasons, The City of Malmö have a variety of seamlessly integrated services and a responsive user experience all the way from the home page, via the content pages, throughout the interaction in the services. Our web content, tools and services must work on all screen sizes and on all major devices.
 
-We release early, release often and iterate over again to make it better. We build clean user interfaces, reuse successful interaction patterns others created and we try to keep things simple. We put the user in the first place. We do not use layovers to distract the user from performing a task. We base most of our development on open source and we provide our own applications as open source.
+We release early, release often and iterate over again to make it better. We build clean user interfaces, reuse successful interaction patterns others created and we try to keep things simple. We put the user in the first place. We do not use overlays to distract the user from performing a task. We base most of our development on open source and we provide our own applications as open source.
 
 The Web Application Guidelines (WAG) explains how you make your web application a seamless part of our web presence and how you can take part in creating a superior web experience.
 
