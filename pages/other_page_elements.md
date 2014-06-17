@@ -97,7 +97,7 @@ The "Visa på karta" (Show on map) link in the contact us box that creates an in
 
 `href` The URL that you can get by doing a manual address lookup at the [full map](http://malmo.se/karta) or programatically from our REST API, see the Autocomplete example in the [Forms]({{ site.baseurl}}/forms_buttons_and_messages) section. The address must be URL escaped.
 
-`class="show-on-map"` Omit the `m-icon-location` above when the link is placed outside the Contact Us box.
+`class="show-on-map"` Omit the `m-icon-location` class when the link is placed outside the Contact Us box.
 
 `data-map-selector=".contact-us-map"` A valid CSS selector for the element where the map should be injected.
 
