@@ -95,9 +95,9 @@ Note: Be sure to use the correct Swedish format for phone numbers so mobile devi
 
 The "Visa på karta" (Show on map) link in the contact us box that creates an inline map can be used in other contexts as well. You do not have to provide additional scripts for it to work, just specify the following attributes in an `<a>` element:
 
-`href`: The URL that you can get by doing a manual address lookup at the [full map](http://malmo.se/karta) or programatically from our REST API, see the Autocomplete example in the [Forms]({{ site.baseurl}}/forms_buttons_and_messages) section. The address must be URL escaped.
+`href` The URL that you can get by doing a manual address lookup at the [full map](http://malmo.se/karta) or programatically from our REST API, see the Autocomplete example in the [Forms]({{ site.baseurl}}/forms_buttons_and_messages) section. The address must be URL escaped.
 
-`class="show-on-map m-icon-location"`
+`class="show-on-map"` Omit the `m-icon-location` above when the link is placed outside the Contact Us box.
 
 `data-map-selector=".contact-us-map"` A valid CSS selector for the element where the map should be injected.
 
