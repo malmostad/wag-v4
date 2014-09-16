@@ -64,7 +64,7 @@ a.dropdown-toggle:hover {
   background: #fff;
 }
 
-body::after {
+body.editors-draft::after {
   position: fixed;
   bottom: 3.4em;
   left: -3.4em;
