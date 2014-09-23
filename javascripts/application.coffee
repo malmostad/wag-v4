@@ -1,6 +1,9 @@
-# ---
-# ---
+---
+---
 $ ->
+  if window.location.hash
+    console.log "HASH"
+
   # Example for autocompete
   $address = $("#street-name")
   if $address.length

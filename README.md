@@ -14,7 +14,7 @@ You need Ruby 2.x with bundler on your machine.
 
 Checkout the `gh-pages`. To install Jekyll and the dependencies, run:
 
-    $ bundle install
+    bundle install
 
 Create a feature branch you can work in without triggering immediate publishing. Merge the changes into the `gh-pages` branch and push to GitHub to publish your work.
 
@@ -22,9 +22,7 @@ The content pages are found in the `pages` directory.
 
 When editing, run Jekyll and tell it to generate pages and assets when they are changed:
 
-``` shell
-$ jekyll serve --baseurl "" --watch
-```
+    jekyll serve --baseurl "" --watch
 
 Go to [http://localhost:4000/](http://localhost:4000/)
 
@@ -36,19 +34,16 @@ The main template is found in `_layouts`. All includes including the navigation 
 
 
 ## Editing Sass and Coffeescript
-**NOTE: These instructions are based on gh-pages v2 which are not released yet,
-      in the meantime, use the isntructions on https://github.com/malmostad/wag**
 
-There are a few asset files used for the WAG itself. The source is available in the `stylesheets` and `javascripts` directories. The files are compiled during editing if you have Jekyll running.
+There are a few asset files used for the WAG itself. The source is available in the `stylesheets`, `_sass` and `javascripts` directories. The files are compiled during editing if you have Jekyll running. Otherwise, run `jekyll build`.
 
+## Build and Deploy
 
-## Deploying After Changes
-If you have edited Sass and Coffeescript files, run:
+    jekyll build
 
-    $ ./build.sh
+A new GitHub pages site will be deployed to http://malmostad.github.io/wag-external-v4/
 
-before committing and pushing your changes to GitHub. This will minify the JavaScript file that has med generated from CoffeeScript.
-
+Work in another branch than gh-pages if you don't want to deploy a new version on push.
 
 ## Upgrade The Shared Assets
 See the instructions in our [shared assets](https://github.com/malmostad/shared_assets) repository.

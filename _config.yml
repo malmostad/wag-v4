@@ -2,20 +2,16 @@
 name: "Web Application Guidelines, External v4"
 markdown: kramdown
 highlighter: pygments
-exclude: [build.sh]
+exclude: []
 baseurl: /wag-external-v4
 cdn_url: //assets.malmo.se/external/v4
 # cdn_url: //www.local.malmo.se:3001/assets
 permalink: /:categories/:title
 relative_permalinks: false
 
-# sass:
-#   sass_dir: stylesheets
-#   style: :expanded
-#   # style: :compressed
-
-# coffee:
-#   coffee_dir: javascripts
+sass:
+  # style: :expanded
+  style: :compressed
 
 kramdown:
   auto_ids: true
