@@ -1,6 +1,16 @@
 ---
 ---
 $ ->
+  # Add anchor links to headings
+  $article = $("article[role=main]")
+  $.each ['h2', 'h3', 'h4', 'h5', 'h6'], (i, headings) ->
+    $headings = $article.find(headings)
+    $headings.each (i, heading) ->
+      $heading = $(heading)
+      if typeof $heading.attr("id") isnt "undefined" and $heading.attr("id") isnt ""
+        $heading.append "<a href='##{$heading.attr("id")}' class='header-link m-icon-link'></a>"
+        return
+
   # Example for autocompete
   $address = $("#street-name")
   if $address.length
