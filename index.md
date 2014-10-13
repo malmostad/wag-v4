@@ -56,5 +56,3 @@ There's always many aspects of a subject that can't be covered in guidelines. It
 * [CMS web site](http://malmo.se/)
 * WAG v4, that is this documentation itself ([source code](https://github.com/malmostad/wag-external-v4)).
 * [Prototype pages](http://webapps07.malmo.se/juni2014) ([source code](https://github.com/malmostad/juni2014))
-
-Note: Our content web site, www.malmo.se, is currently being adapted to WAG v4 and must not be used as a reference for v4 by now.
