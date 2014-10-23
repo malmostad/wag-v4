@@ -13,80 +13,50 @@ When you provide contact information, use the `aside` box below with vCard/hCard
 Note: Be sure to use the correct Swedish format for phone numbers so mobile devices have a chance to recognize them.
 
 <div class="example">
-  <aside class="contact-us vcard basic">
+  <aside class="contact-us basic">
     <h1>Kontakta oss</h1>
-    <div class="fn">Vägledningscentrum</div>
-    <div>
-      E-post:
-      <span class="email">vagledningscentrum@malmo.se</span>
-    </div>
-    <div>
-      Tel:
-      <span class="tel">040-34 49 95</span>
-    </div>
 
-    <h2>Postadress</h2>
-    <div class="adr">
-      <div class="fn">Vägledningscentrum</div>
-      <div class="post-office-box">Föreningsgatan 7A</div>
-      <div>
-        <span class="postal-code">211 44</span>
-        <span class="locality">Malmö</span>
+    <div class="vcard">
+      <h2 class="fn">Vägledningscentrum</h2>
+      <div>E-post: <span class="email">vagledningscentrum@malmo.se</span></div>
+      <div>Tel: <span class="tel">040-34 49 95</span></div>
+
+      <h3>Postadress</h3>
+      <div class="adr">
+        <div class="fn">Vägledningscentrum</div>
+        <div class="post-office-box">Föreningsgatan 7A</div>
+        <div><span class="postal-code">211 44</span> <span class="locality">Malmö</span></div>
       </div>
-    </div>
 
-    <h2 class="visiting-address">Besöksadress</h2>
-    <div class="street-address">Föreningsgatan 7A</div>
-    <div>
-      <a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta"
-          class="show-on-map m-icon-location"
-          data-map-selector=".contact-us-map"
-          data-scroll-to=".visiting-address"
-          data-poi="Föreningsgatan 7A"
-          title="Föreningsgatan 7A">
-        Visa på karta
-      </a>
+      <h3 class="visiting-address v-0">Besöksadress</h3>
+      <div class="street-address">Föreningsgatan 7A</div>
+      <div><a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+      <div class="contact-us-map m-0"></div>
     </div>
-    <div class="contact-us-map"></div>
   </aside>
 </div>
 
 {% highlight html %}
-<aside class="contact-us vcard basic">
+<aside class="contact-us basic">
   <h1>Kontakta oss</h1>
-  <div class="fn">Vägledningscentrum</div>
-  <div>
-    E-post:
-    <span class="email">vagledningscentrum@malmo.se</span>
-  </div>
-  <div>
-    Tel:
-    <span class="tel">040-34 49 95</span>
-  </div>
 
-  <h2>Postadress</h2>
-  <div class="adr">
-    <div class="fn">Vägledningscentrum</div>
-    <div class="post-office-box">Föreningsgatan 7A</div>
-    <div>
-      <span class="postal-code">211 44</span>
-      <span class="locality">Malmö</span>
+  <div class="vcard">
+    <h2 class="fn">Vägledningscentrum</h2>
+    <div>E-post: <span class="email">vagledningscentrum@malmo.se</span></div>
+    <div>Tel: <span class="tel">040-34 49 95</span></div>
+
+    <h3>Postadress</h3>
+    <div class="adr">
+      <div class="fn">Vägledningscentrum</div>
+      <div class="post-office-box">Föreningsgatan 7A</div>
+      <div><span class="postal-code">211 44</span> <span class="locality">Malmö</span></div>
     </div>
-  </div>
 
-  <h2 class="visiting-address">Besöksadress</h2>
-  <div class="street-address">Föreningsgatan 7A</div>
-  <div>
-    <a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta"
-       class="show-on-map m-icon-location"
-       data-map-selector=".contact-us-map"
-       data-scroll-to=".visiting-address"
-       data-poi="Föreningsgatan 7A"
-       title="Föreningsgatan 7A">
-      Visa på karta
-    </a>
+    <h3 class="visiting-address v-0">Besöksadress</h3>
+    <div class="street-address">Föreningsgatan 7A</div>
+    <div><a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+    <div class="contact-us-map m-0"></div>
   </div>
-  <div class="contact-us-map"></div>
 </aside>
 {% endhighlight %}
 
