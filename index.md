@@ -55,4 +55,4 @@ There's always many aspects of a subject that can't be covered in guidelines. It
 * [Blogg](http://malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/tree/master/wp-content/themes/external-blogg))
 * [CMS web site](http://malmo.se/)
 * WAG v4, that is this documentation itself ([source code](https://github.com/malmostad/wag-external-v4)).
-* [Prototype pages](http://webapps07.malmo.se/juni2014) ([source code](https://github.com/malmostad/juni2014))
+* [Prototype pages](http://malmostad.github.io/prototypes/) ([source code](https://github.com/malmostad/prototypes))
