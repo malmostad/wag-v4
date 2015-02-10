@@ -61,30 +61,30 @@ This gives us "Låneregler – Malmö stad".
 
 
 ## Compliance Levels
-There are three compliance levels in the WAG:
+There are three compliance levels:
 
-1. Full compliance
-2. Full compliance, except for forms
-3. The application is only including the global masthead and footer
+1. Full: Full compliance with the guidelines
+1. Medium: Full compliance, except for forms
+1. Minimal: The application does only include the global masthead and footer
 
-Compliance level 1 is required by web applications that are built for The City of Malmö.
+Full compliance is required by web applications that are built for The City of Malmö.
 
-If your web applications can't be compliant with level 1, please contact webbteamet@malmo.se to discuss an exception. An exception must be made in the phase of procurement or at the beginning of a project.
-
-
-### Compliance Level 2
-Compliance Level 2 is for web applications with complex forms that cannot be adapted to use the markup structure specified in the *Forms* section. If you have an approved exception to use Compliance Level 2, follow the coding instructions in the *Forms* section. It is your responsibility as a vendor or consultant to ensure that the forms are responsive, accessible, nice looking and user friendly.
+If your web application can't reach full compliance, please contact webbteamet@malmo.se to discuss an exception. An exception must be made in the phase of procurement or at the beginning of a project.
 
 
-### Compliance Level 3
-Compliance Level 3 is for web applications that for some reason can't be changed at all when it comes to the user interface. To qualify for this level, the application should not be a core service for The City of Malmö. Those applications will only include the global masthead and footer and Google Analytics tracking. If you have an approved exception to use Compliance Level 3, change:
+### Medium Compliance
+Medium compliance level is for web applications with complex forms that cannot be adapted to use the markup structure specified in the *Forms* section. If you have an approved exception to use Compliance Level 2, follow the coding instructions in the *Forms* section. It is your responsibility as a vendor or consultant to ensure that the forms are responsive, accessible, nice looking and user friendly.
+
+
+### Minimal Compliance
+Minimal compliance level is for web applications that for some reason can't be changed at all when it comes to the user interface. To qualify for this level, the application should not be a core service for The City of Malmö. Those applications will only include the global masthead and footer and Google Analytics tracking. If you have an approved exception to use Compliance level minimum, change:
 
 1. `malmo.css` to `masthead_standalone.css`
 1. `malmo.js` to `masthead_standalone.js`
 
 
 ## Alternativ Asset Bundles
-If your application already includes the latest version of jQuery 1.x and you for some reason can't exclude it, change `malmo.js` to `malmo_without_jquery.js` or `masthead_standalone_without_jquery.js` for Compliance level 3 applications.
+If your application already includes the latest version of jQuery 1.x and you for some reason can't exclude it, change `malmo.js` to `malmo_without_jquery.js` or `masthead_standalone_without_jquery.js` for Compliance level minimal applications.
 
 ## Optimize Your Own Assets
 Your own stylesheets and JavaScript code must be concatenated into single files and then minified. If your application has files for older versions of Internet Explorer, include them in conditional comments.
