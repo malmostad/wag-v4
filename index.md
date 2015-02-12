@@ -6,7 +6,7 @@ permalink: /
 
 # Web Application Guidelines
 
-Version 4 for City of Malmö's external and internal web applications.
+Version 4 for City of Malmö's external and internal (intranet) web applications.
 {:.preamble}
 
 ## Our Web Presence
