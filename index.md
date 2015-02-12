@@ -6,7 +6,7 @@ permalink: /
 
 # Web Application Guidelines
 
-Version 4 for The City of Malmö's external web
+Version 4 for City of Malmö's external and internal web applications.
 {:.preamble}
 
 ## Our Web Presence
@@ -28,11 +28,11 @@ Familiarize yourself with the guidelines if you:
 
 
 ## Scope & Limitation
-The WAG describes how you use the global assets in an application to make it a consistent part of our web services from a user perspective independently of what technical platform it is built on. Server side development guidelines are not covered here. If you are developing an application based on Ruby on Rails, Wordpress or Drupal, check out our [repositories at Github](https://github.com/malmostad/) to see if you can fork or reuse an existing resource. Source code management---for both client and server side code---is covered below.
+The WAG describe how you use the Global Assets in an application to make it a consistent part of our web services from a user perspective independently of what technical platform it is built on. Server side development guidelines are not covered here. If you are developing an application based on Ruby on Rails, Wordpress or Drupal, check out our [repositories at Github](https://github.com/malmostad/) to see if you can fork or reuse existing resources. Source code management---for both client and server side code---is covered below.
 
 
 ## Register Your Web Application
-The first thing you must do when you start a project that will introduce a new web application at The City of Malmö, is to send webbteamet@malmo.se an email with a short description of the system, it's purpose and the name of the system administrator ("systemförvaltaren"). By doing this, we will be able to contact the system administrator when new versions of the global assets are available and before older versions will be deprecated.
+The first thing you must do when you start a project that will introduce a new web application at The City of Malmö, is to send webbteamet@malmo.se an email with a short description of the system, it's purpose and the name of the system administrator. By doing this, we will be able to contact the system administrator when new versions of the Global Assets are available and before older versions will be deprecated.
 
 
 ## Source Code: License and Management
@@ -48,11 +48,20 @@ See our [list of devices and browsers](http://malmo.se/wag) that web based servi
 
 
 ## Reference Applications
-There's always many aspects of a subject that can't be covered in guidelines. It requires skills and experience to build a user interface that is easy to use and looks good and to adapt guidelines in a good way. It will help checking out the following web applications that are using global assets v4. You will see how the guidelines are applied in the real world and how the different parts comes together.
+There's always many aspects of a subject that can't be covered in guidelines. It requires skills and experience to build a user interface that is easy to use and looks good and to adapt guidelines in a good way. It will help checking out the following web applications that are using Global Assets v4. You will see how the guidelines are applied in the real world and how the different parts comes together.
 
+### External Applications
 * [Site search](http://s1.malmo.se/?q=bibliotek) ([source code](https://github.com/malmostad/sitesearch))
 * [Hitta & jämför äldreboenden](http://webapps05.malmo.se/aldreboenden) ([source code](https://github.com/malmostad/nursing-homes))
-* [Blogg](http://malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/tree/master/wp-content/themes/external-blogg))
+* [Blogg](http://malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
 * [CMS web site](http://malmo.se/)
 * WAG v4, that is this documentation itself ([source code](https://github.com/malmostad/wag-external-v4)).
 * [Prototype pages](http://malmostad.github.io/prototypes/) ([source code](https://github.com/malmostad/prototypes))
+
+### Internal Applications
+Access to the intranet is required.
+
+* [My Page, Staff Directory, Site search](https://komin.malmo.se/) ([source code](https://github.com/malmostad/intranet-dashboard/))
+* [Blogg](https://komin.malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
+* [News](https://komin.malmo.se/nyheter) ([source code](https://github.com/malmostad/wp-apps/))
+* The CMS web site for the intrenet is not using WAG v4 yet, but they will use the same styling as the external web site (see above).
