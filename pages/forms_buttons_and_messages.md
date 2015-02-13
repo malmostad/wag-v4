@@ -11,7 +11,7 @@ We use the [Bootstrap v3](http://getbootstrap.com/) markup structure for forms w
 To apply the styling to your forms, you need to set a `mf-v4` class somewhere *outside* the form. You can set it in the `body` element to have all your forms styled. Buttons will be styled based on their class names only and does not require the `mf-v4` scoping class name.
 
 ## Compliance Level 2
-If you have an approved exception from webbteamet@malmo.se to deliver a web application with [Compliance Level 2]({{ site.baseurl }}/getting_started#compliance-level-2), omit the `mf-v4` class and your forms will not be affected by the global assets. It is your responsibility to ensure that your forms are responsive, accessible, nice looking and user friendly.
+If you have an approved exception from webbteamet@malmo.se to deliver a web application with [Compliance Level 2]({{ site.baseurl }}/getting_started#compliance-level-2), omit the `mf-v4` class and your forms will not be affected by the Global Assets. It is your responsibility to ensure that your forms are responsive, accessible, nice looking and user friendly.
 
 
 ## Forms
@@ -44,7 +44,7 @@ An input field used together with an action button, most often used for search f
 
 ### Responsive Forms
 
-The example below covers the most common use case for a responsive form. Bootstrap's non-semantic hard coded grid classes (like `class="col-md-4"`) are not available in the global assets, we use a slighly different approach here to get a responsive form grid:
+The example below covers the most common use case for a responsive form. Bootstrap's non-semantic hard coded grid classes (like `class="col-md-4"`) are not available in the Global Assets, we use a slighly different approach here to get a responsive form grid:
 
 1. Add `class="basic"` to your `form`.
 2. In each `form-group`, add `class="controls"` to the `div` with the form controls.
@@ -368,7 +368,7 @@ $('#start-date').datepicker
 {% endhighlight %}
 
 ### Autocomplete
-[jQueryUI Autocomplete](http://jqueryui.com/autocomplete/) is available in the global assets with custom styling. Here is a live example using City of Malmö's map service REST API.
+[jQueryUI Autocomplete](http://jqueryui.com/autocomplete/) is available in the Global Assets with custom styling. Here is a live example using City of Malmö's map service REST API.
 
 <div class="example">
   <form action="/" method="get">

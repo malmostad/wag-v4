@@ -6,7 +6,7 @@ permalink: /grids_and_responsive_design/
 
 # {{ page.title }}
 
-Global assets v4 is tailored for web applications with a responsive user interface, i.e. RWD applications. To use global assets v4, your application should fall into one of three categories:
+Global Assets v4 is tailored for web applications with a responsive user interface, i.e. RWD applications. To use Global Assets v4, your application should fall into one of three categories:
 
 1. It is already responsive
 2. It is about to be developed with a responsive user interface

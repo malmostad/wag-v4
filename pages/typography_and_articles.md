@@ -6,19 +6,19 @@ permalink: /typography_and_articles/
 
 # {{ page.title }}
 
-Stylesheets in the global assets includes styling for a basic set of elements in article content, tables and forms. For elements not listed in the WAG, you will have to set the styling yourself based on the specification and examples below.
+Stylesheets in the Global Assets includes styling for a basic set of elements in article content, tables and forms. For elements not listed in the WAG, you will have to set the styling yourself based on the specification and examples below.
 
 ## Typefaces
-The serif typeface [Georgia](http://en.wikipedia.org/wiki/Georgia_(typeface)) is used for body copy and headings in articles. The sans serif typeface [Open Sans](http://en.wikipedia.org/wiki/Open_Sans) is used for menus, navigation, tables, captions, preambles and short pieces of text. The web fonts for Open Sans are loaded from the assets server automatically when you include the global assets in your code. Use the full `font-family` declarations with backup families found in the [Sass variable file]({{ site.baseurl }}/sass_utilities).
+The serif typeface [Georgia](http://en.wikipedia.org/wiki/Georgia_(typeface)) is used for body copy and headings in articles. The sans serif typeface [Open Sans](http://en.wikipedia.org/wiki/Open_Sans) is used for menus, navigation, tables, captions, preambles and short pieces of text. The web fonts for Open Sans are loaded from the assets server automatically when you include the Global Assets in your code. Use the full `font-family` declarations with backup families found in the [Sass variable file]({{ site.baseurl }}/sass_utilities).
 
 ## Font Size
 Font sizes should be specified with relative units, i.e. `em` or `%`. You must respect the user device and leave the font size for the `body` element to 100%. All text styling included in the assets, e.g. article content (below) and tables are based on this.
 
 ### Size for Individual Content Types
-Type and size will automatically be applied for your body copy content, navigation and forms. The table below is a reference to make it possible to apply consistent typography for elements not covered in the global assets.
+Type and size will automatically be applied for your body copy content, navigation and forms. The table below is a reference to make it possible to apply consistent typography for elements not covered in the Global Assets.
 
-| ------------------------------------------------------ | ---------------- | --------- | ------------ |
-|                      Content Type                      | Size/Line Height |  Typeface | Weight/Style |
+|:-------------------------------------------------------|:-----------------|:----------|:-------------|
+| Content Type                                           | Size/Line Height | Typeface  | Weight/Style |
 | ------------------------------------------------------ | ---------------- | --------- | ------------ |
 | Article body copy                                      | 17/25            | Georgia   | Normal       |
 | Article h1                                             | 36/40            | Georgia   | Normal       |
@@ -169,7 +169,7 @@ If you have just one single element that should be styled as body copy, you can 
 
 
 ## Images
-Most article images works best on full width as in the example above. We are floating images on wider devices in some cases, e.g. on our [Blog](http://malmo.se/blogg) posts, but images should never squeeze the text that floats around them and they should be displayed as non-floating full width images on narrow devices. Those rules must be set with breakpoints in your applications stylesheet, never by the editor. No breakpoints for images are set in the global assets since applications not necessarily have the same grid and the same type of images (small symbols have different needs than photographic images e.g.).
+Most article images works best on full width as in the example above. We are floating images on wider devices in some cases, e.g. on our [Blog](http://malmo.se/blogg) posts, but images should never squeeze the text that floats around them and they should be displayed as non-floating full width images on narrow devices. Those rules must be set with breakpoints in your applications stylesheet, never by the editor. No breakpoints for images are set in the Global Assets since applications not necessarily have the same grid and the same type of images (small symbols have different needs than photographic images e.g.).
 
 Use the caption markup as seen in the example above.
 
@@ -250,5 +250,3 @@ Note: For boxes used elsewhere, i.e. not in articles, see the [Other Page Elemen
   </section>
 </article>
 {% endhighlight %}
-
-

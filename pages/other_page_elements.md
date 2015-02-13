@@ -130,7 +130,7 @@ This type of box *must not* be used in article content, see Article Boxes in the
 {% endhighlight %}
 
 ## Sharing Widget
-Sharing icons will automatically be inject by the global assets on a page containing the tag below. You might need to adjust the margins around `.m-share` in your specific context. Leave some room for the widget to grow if more  services are added in the future.
+Sharing icons will automatically be inject by the Global Assets on a page containing the tag below. You might need to adjust the margins around `.m-share` in your specific context. Leave some room for the widget to grow if more  services are added in the future.
 
 <div class="example">
   <div class="m-share"></div>
@@ -138,4 +138,3 @@ Sharing icons will automatically be inject by the global assets on a page contai
 {% highlight html %}
 <div class="m-share"></div>
 {% endhighlight %}
-
