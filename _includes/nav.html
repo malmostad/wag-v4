@@ -1,14 +1,10 @@
 <nav class="content">
   <h1>WAG External v4</h1>
   <ul>
-    <li><a href="{{ site.baseurl }}/">Introduction</a></li>
-    <li><a href="{{ site.baseurl }}/getting_started/">Getting Started</a></li>
-    <li><a href="{{ site.baseurl }}/grids_and_responsive_design/">Grids and Responsive Design</a></li>
-    <li><a href="{{ site.baseurl }}/navigation_and_pagination/">Navigation &amp; Pagination</a></li>
-    <li><a href="{{ site.baseurl }}/typography_and_articles/">Typography &amp; Articles</a></li>
-    <li><a href="{{ site.baseurl }}/tables/">Tables</a></li>
-    <li><a href="{{ site.baseurl }}/colors/">Colors</a></li>
-    <li><a href="{{ site.baseurl }}/forms_buttons_and_messages/">Forms, Buttons &amp; Messages</a></li>
-    <li><a href="{{ site.baseurl }}/other_page_elements/">Other Page Elements</a></li>
+    {% for items in site.nav %}
+    <li{% if page.permalink == items.url %} class="current"{% endif %}>
+      <a href="{{ site.baseurl }}{{ items.url }}">{{ items.title }}</a>
+    </li>
+    {% endfor %}
   </ul>
 </nav>
