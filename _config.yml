@@ -1,5 +1,5 @@
-# jekyll serve --baseurl "" --watch
-name: "Web Application Guidelines, External v4"
+# jekyll serve --baseurl ""
+name: "Web Application Guidelines, v4"
 nav:
   - { title: 'Introduction', url: '/' }
   - { title: 'Getting Started', url: '/getting_started/' }
@@ -14,7 +14,7 @@ nav:
 markdown: kramdown
 highlighter: pygments
 exclude: []
-baseurl: /wag-external-v4
+baseurl: /wag-v4
 cdn_url: //assets.malmo.se/external/v4
 # cdn_url: //www.local.malmo.se:3001/assets
 permalink: /:categories/:title
