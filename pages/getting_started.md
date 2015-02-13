@@ -101,7 +101,7 @@ The masthead and the footer, as seen on this page, are automatically included on
 
 The masthead is responsive and you must set the `viewport` meta tag in your application for it to work (see above).
 
-For an application, or a single view, that best utilizes the viewport's full height, such as our [map service](http://www.malmo.se/karta), it is possible to omit the global footer by adding a `no-footer` class to your `body` tag. Discuss with webbteamet@malmo.se first. The global masthead must always be present.
+For an application, or a single view, that best utilizes the viewport's full height, such as our [map service](http://malmo.se/karta), it is possible to omit the global footer by adding a `no-footer` class to your `body` tag. Discuss with webbteamet@malmo.se first. The global masthead must always be present.
 
 
 ## Components Available in the Global Assets

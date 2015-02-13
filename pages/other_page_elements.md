@@ -30,7 +30,7 @@ Note: Be sure to use the correct Swedish format for phone numbers so mobile devi
 
       <h3 class="visiting-address v-0">Besöksadress</h3>
       <div class="street-address">Föreningsgatan 7A</div>
-      <div><a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+      <div><a href="http://malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
       <div class="contact-us-map m-0"></div>
     </div>
   </aside>
@@ -54,7 +54,7 @@ Note: Be sure to use the correct Swedish format for phone numbers so mobile devi
 
     <h3 class="visiting-address v-0">Besöksadress</h3>
     <div class="street-address">Föreningsgatan 7A</div>
-    <div><a href="http://www.malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+    <div><a href="http://malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
     <div class="contact-us-map m-0"></div>
   </div>
 </aside>

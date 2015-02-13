@@ -203,9 +203,9 @@ Note: For boxes used elsewhere, i.e. not in articles, see the [Other Page Elemen
       <h1 class="box-title">Read more</h1>
       <div class="box-content">
         <ul>
-          <li><a href="http://www.malmo.se/">Cu ius primis laboramus</a></li>
-          <li><a href="http://www.malmo.se/">Graece håbemus</a></li>
-          <li><a href="http://www.malmo.se/">Solet inciderint</a></li>
+          <li><a href="http://malmo.se/">Cu ius primis laboramus</a></li>
+          <li><a href="http://malmo.se/">Graece håbemus</a></li>
+          <li><a href="http://malmo.se/">Solet inciderint</a></li>
         </ul>
       </div>
     </section>
@@ -242,9 +242,9 @@ Note: For boxes used elsewhere, i.e. not in articles, see the [Other Page Elemen
     <h1 class="box-title">Read more</h1>
     <div class="box-content">
       <ul>
-        <li><a href="http://www.malmo.se/">Cu ius primis laboramus</a></li>
-        <li><a href="http://www.malmo.se/">Graece håbemus</a></li>
-        <li><a href="http://www.malmo.se/">Solet inciderint</a></li>
+        <li><a href="http://malmo.se/">Cu ius primis laboramus</a></li>
+        <li><a href="http://malmo.se/">Graece håbemus</a></li>
+        <li><a href="http://malmo.se/">Solet inciderint</a></li>
       </ul>
     </div>
   </section>
