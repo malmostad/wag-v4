@@ -81,7 +81,7 @@ The "Visa på karta" (Show on map) link in the contact us box that creates an in
 ## Boxes for Application Views
 This box is suitable for grouping information in an application. It has an optional context help function and a context menu in the titlebar you can use by supplying the markup in the example.
 
-This type of box *must not* be used in article content, see Article Boxes in the [Typography & Article]({{ site.baseurl}}/typography_and_pages).
+This type of box *must not* be used in article content, see Article Boxes in the [Typography & Articles]({{ site.baseurl}}/typography_and_articles).
 
 <div class="example">
   <section class="box" contextmenu="feeds-news-menu" id="feeds-news">

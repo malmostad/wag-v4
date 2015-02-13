@@ -6,39 +6,41 @@ permalink: /typography_and_articles/
 
 # {{ page.title }}
 
-Stylesheets in the Global Assets includes styling for a basic set of elements in article content, tables and forms. For elements not listed in the WAG, you will have to set the styling yourself based on the specification and examples below.
+Stylesheets in the Global Assets includes styling for a basic set of elements in article content, tables and forms. For elements not listed in the WAG, you will have to set the styling yourself based on the guidelines and examples below.
 
 ## Typefaces
-The serif typeface [Georgia](http://en.wikipedia.org/wiki/Georgia_(typeface)) is used for body copy and headings in articles. The sans serif typeface [Open Sans](http://en.wikipedia.org/wiki/Open_Sans) is used for menus, navigation, tables, captions, preambles and short pieces of text. The web fonts for Open Sans are loaded from the assets server automatically when you include the Global Assets in your code. Use the full `font-family` declarations with backup families found in the [Sass variable file]({{ site.baseurl }}/sass_utilities).
+The serif typeface [Georgia](http://en.wikipedia.org/wiki/Georgia_(typeface)) is used for body copy and headings in articles. The sans serif typeface [Open Sans](http://en.wikipedia.org/wiki/Open_Sans) is used for menus, navigation, tables, captions, preambles and short pieces of text. The web fonts for Open Sans are loaded from the assets server automatically when you include the Global Assets in your code. Use the full `font-family` declarations with backup families found in the [Sass variable file](https://github.com/malmostad/shared_assets/blob/master/stylesheets/shared/variables.scss).
 
 ## Font Size
-Font sizes should be specified with relative units, i.e. `em` or `%`. You must respect the user device and leave the font size for the `body` element to 100%. All text styling included in the assets, e.g. article content (below) and tables are based on this.
+Font sizes should be specified with relative units, i.e. `em` or `%`. You must respect the user device and leave the font size for the `body` element to 100%. Text styling included in the assets, e.g. article content (below) and tables are based on this.
+
+An exception to this rule is the font size in forms that are set in absolute units using `px`. The reason for this is that we use Bootstrap for forms and it is difficult to get it to work with relative sizes.
 
 ### Size for Individual Content Types
 Type and size will automatically be applied for your body copy content, navigation and forms. The table below is a reference to make it possible to apply consistent typography for elements not covered in the Global Assets.
 
-|:-------------------------------------------------------|:-----------------|:----------|:-------------|
-| Content Type                                           | Size/Line Height | Typeface  | Weight/Style |
-| ------------------------------------------------------ | ---------------- | --------- | ------------ |
-| Article body copy                                      | 17/25            | Georgia   | Normal       |
-| Article h1                                             | 36/40            | Georgia   | Normal       |
-| Article h2                                             | 24/29            | Georgia   | Normal       |
-| Article h3                                             | 17/25            | Georgia   | Bold         |
-| Article h4                                             | 17/25            | Georgia   | Italic       |
-| Article preambles                                      | 16/21            | Open Sans | Normal       |
-| Extract from article content                           | 15/21            | Georgia   | Normal       |
-| Data tables                                            | 14/19            | Open Sans | Normal       |
-| Data table heading                                     | 14/19            | Open Sans | Bold         |
-| Menus and navigation                                   | 14               | Open Sans | Normal       |
-| Very short pieces of text, e.g. date or a photo byline | 12               | Open Sans | Normal       |
-| Headings for boxes                                     | 16               | Open Sans | Normal       |
-| Forms                                                  | 14               | Open Sans | Normal       |
-| ------------------------------------------------------ | ---------------- | --------- | ------------ |
+|:-------------------------------------------------------|:-----------------|:-----------|:-------------|
+| Content Type                                           | Size/Line Height | Typeface   | Weight/Style |
+| ------------------------------------------------------ | ---------------- | ---------  | ------------ |
+| Article body copy                                      | 17/25            | Georgia    | Normal       |
+| Article h1                                             | 36/40            | Georgia    | Normal       |
+| Article h2                                             | 24/29            | Georgia    | Normal       |
+| Article h3                                             | 17/25            | Georgia    | Bold         |
+| Article h4                                             | 17/25            | Georgia    | Italic       |
+| Article preambles                                      | 16/21            | Open Sans  | Normal       |
+| Extract from article content                           | 15/21            | Georgia    | Normal       |
+| Data tables                                            | 14/19            | Open Sans | Normal       |
+| Data table heading                                     | 14/19            | Open Sans  | Bold         |
+| Menus and navigation                                   | 14               | Open Sans  | Normal       |
+| Very short pieces of text, e.g. date or a photo byline | 12               | Open Sans  | Normal       |
+| Headings for boxes                                     | 16               | Open Sans  | Normal       |
+| Forms                                                  | 14               | Open Sans  | Normal       |
+| ------------------------------------------------------ | ---------------- | ---------  | ------------ |
 {:.full.wrap}
 
-Note: This is the sizes in pixels that the text will *rendered* in under the circumstances mentioned above, the sizes should be *specified* in relative sizes. An exception to this rule is the font size in forms that are set in absolute units using `px`. The reason for this is that we use Bootstrap for forms and it is difficult to get it to work with relative sizes.
-
 As you can see in the table above, the sans serif is set in 16, 14 and, in very rare cases, 12px. The serif is set in 36, 24, 17, and for short text 15px. The first and second level headings are adjusted to a smaller sizes for narrow devices under certain breakpoints.
+
+Note: This is the sizes in pixels that the text will be *rendered* in under the circumstances mentioned above, the sizes should be *specified* in relative sizes. "Pixels" is a simplified term given the many variants on screen rendering methods available.
 
 ## Text Color
 Black text on white background.
@@ -169,7 +171,7 @@ If you have just one single element that should be styled as body copy, you can 
 
 
 ## Images
-Most article images works best on full width as in the example above. We are floating images on wider devices in some cases, e.g. on our [Blog](http://malmo.se/blogg) posts, but images should never squeeze the text that floats around them and they should be displayed as non-floating full width images on narrow devices. Those rules must be set with breakpoints in your applications stylesheet, never by the editor. No breakpoints for images are set in the Global Assets since applications not necessarily have the same grid and the same type of images (small symbols have different needs than photographic images e.g.).
+Most article images works best on full width as in the example above. We are floating images on wider devices in some cases, e.g. on our [Blog](http://malmo.se/blogg) posts. Use the classes `primary` and `secondary` on article images for those two cases. Secondary images will display on full article width up to a certain breakpoint when they are changing to float to the right.
 
 Use the caption markup as seen in the example above.
 

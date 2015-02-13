@@ -211,7 +211,7 @@ For a `form-group` without a main label, use `<span class="no-control-label"></s
 </form>
 {% endhighlight %}
 
-As you can see in the above example, the labels will be placed over the controls block on narrow devices (vertical form) and to the left of the controls on wider ones (horizontal form). If the breakpoint isn't optimal for your scenario, you can easily adjusted it by including a mixin from the [Sass utilities]({{ site.baseurl }}/sass_utilities) and specify another breakpoint like this:
+As you can see in the above example, the labels will be placed over the controls block on narrow devices (vertical form) and to the left of the controls on wider ones (horizontal form). If the breakpoint isn't optimal for your scenario, you can easily adjusted it by including a mixin from the [Sass utilities](https://github.com/malmostad/shared_assets/) and specify another breakpoint like this:
 
 {% highlight sass %}
 @media (max-width: 42em) {
@@ -345,7 +345,7 @@ Do not set the date format explicitly, `language: "sv"` will provide the Swedish
   <div class="input-group date" id="start-date">
     <input type="text" class="form-control">
     <span class="input-group-addon">
-      <span class="glyphicon glyphicon-calendar"></span>
+      <span class="m-icon-calendar"></span>
     </span>
   </div>
 </div>
@@ -354,7 +354,7 @@ Do not set the date format explicitly, `language: "sv"` will provide the Swedish
 <div class="input-group date" id="start-date">
   <input type="text" class="form-control">
   <span class="input-group-addon">
-    <span class="glyphicon glyphicon-calendar"></span>
+    <span class="m-icon-calendar"></span>
   </span>
 </div>
 {% endhighlight %}
@@ -410,7 +410,7 @@ $("#street-address").autocomplete
 
 
 ## Buttons
-Follow the [Bootstrap v3](http://getbootstrap.com/) class name standard to get the correct styling for buttons and button groups. No default styling is applied to buttons, you need to use the class names. See the [Forms]({{ site.baseurl }}/forms) section for allowed exceptions.
+Follow the Bootstrap v3 class name standard to get the correct styling for buttons and button groups. No default styling is applied to buttons, you need to use the class names.
 
 <div class="example buttons">
   <a class="btn btn-default" href="#">Link</a>
