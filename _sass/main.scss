@@ -38,7 +38,7 @@ article.body-copy {
 }
 
 p code, li code {
-  font-size: 1em;
+  font-size: emize(12);
   font-family: $monospace;
   margin: 0 .2em;
   padding: emize(2) .4em emize(1);
@@ -71,7 +71,7 @@ p code, li code {
 pre {
   word-wrap: normal;
   font-family: $monospace;
-  font-size: 1em;
+  font-size: 1.1em;
   padding: .5em;
   margin: 0;
   line-height: 1.3;
