@@ -19,13 +19,15 @@ This is the navigation we use on web pages and it contains the child pages of th
 
 Use a relevant heading for the content navigation.
 
+The view that is currently displayed is marked with a class name.
+
 <div class="example">
   <nav class="content">
     <h1>Mer i detta ämne</h1>
     <ul>
       <li><a href="#">Avfall &amp; återvinning</a></li>
       <li><a href="#">Bostad &amp; närmiljö</a></li>
-      <li><a href="#">Att göra hållbara val</a></li>
+      <li class="current"><a href="#">Att göra hållbara val</a></li>
       <li><a href="#">Livsmedel</a></li>
       <li><a href="#">Miljöarbetet i Malmö stad som det är just nu</a></li>
       <li><a href="#">Miljöläget i Malmö</a></li>
@@ -39,7 +41,7 @@ Use a relevant heading for the content navigation.
   <ul>
     <li><a href="#">Avfall &amp; återvinning</a></li>
     <li><a href="#">Bostad &amp; närmiljö</a></li>
-    <li><a href="#">Att göra hållbara val</a></li>
+    <li class="current"><a href="#">Att göra hållbara val</a></li>
     <li><a href="#">Livsmedel</a></li>
     <li><a href="#">Miljöarbetet i Malmö stad som det är just nu</a></li>
     <li><a href="#">Miljöläget i Malmö</a></li>
@@ -57,7 +59,7 @@ Use a relevant heading for the basic navigation.
     <h1>Här hittar du</h1>
     <ul>
       <li><a href="/">Alla inlägg</a></li>
-      <li><a href="/bloggare">Bloggare</a></li>
+      <li class="current"><a href="/bloggare">Bloggare</a></li>
       <li><a href="/kategorier">Kategorier</a></li>
       <li><a href="/etiketter">Etiketter</a></li>
       <li><a href="/arkiv">Arkiv</a></li>
@@ -70,7 +72,7 @@ Use a relevant heading for the basic navigation.
   <h1>Här hittar du</h1>
   <ul>
     <li><a href="/">Alla inlägg</a></li>
-    <li><a href="/bloggare">Bloggare</a></li>
+    <li class="current"><a href="/bloggare">Bloggare</a></li>
     <li><a href="/kategorier">Kategorier</a></li>
     <li><a href="/etiketter">Etiketter</a></li>
     <li><a href="/arkiv">Arkiv</a></li>
@@ -80,7 +82,11 @@ Use a relevant heading for the basic navigation.
 
 ### Breadcrumbs
 
-Our breadcrumbs are used to indicating the position of a web page in hierarchical content and to display the name of a service we provide. All breadcrumbs are placed below the masthead. The first position must always be "Start" (that is Swedish, literally) and must always be linked to http://www.malmo.se/, not to the single web application you provide.
+Our breadcrumbs are used to indicating the position of a web page in hierarchical content and to display the name of a service we provide. All breadcrumbs are placed below the masthead.
+
+The first position for external applications must always be "Start" (that is Swedish, literally) and must always be linked to http://www.malmo.se/, not to the single web application you provide.
+
+For internal applications the first node most be "Komin" (the name of our Intranet) and must always be linked to http://komin.malmo.se/, not to the single web application you provide.
 
 ### Static Web Page Breadcrumbs
 
@@ -108,13 +114,13 @@ Our breadcrumbs are used to indicating the position of a web page in hierarchica
 
 ### Web Application Breadcrumbs
 
-The last position "Sök" is the name of the service in the example below. It is linked so the user easily can start over by clicking on it which is not meaningful on a static web page.
+The last position "Nyheter" is the name of the service in the example below. It is linked so the user easily can start over by clicking on it which is not meaningful on a static web page.
 
 <div class="example">
   <nav class="breadcrumbs">
     <ol>
-      <li><a href="http://www.malmo.se/">Start</a></li>
-      <li><a href="/">Sök</a></li>
+      <li><a href="http://komin.malmo.se/">Komin</a></li>
+      <li><a href="/">Nyheter</a></li>
     </ol>
   </nav>
 </div>
@@ -122,14 +128,14 @@ The last position "Sök" is the name of the service in the example below. It is 
 {% highlight html %}
 <nav class="breadcrumbs">
   <ol>
-    <li><a href="http://www.malmo.se/">Start</a></li>
-    <li><a href="/">Sök</a></li>
+    <li><a href="http://komin.malmo.se/">Komin</a></li>
+    <li><a href="/">Nyheter</a></li>
   </ol>
 </nav>
 {% endhighlight %}
 
 
-For a service with a hierarchical structure, provide several levels in the breadcrumbs if it is meaningful for the user to navigate up and to make the context clear:
+For a service with a hierarchical structure that doesn't provide a tailored navigation such as filtering, provide several levels in the breadcrumbs if it is meaningful for the user to navigate up and to make the context clear:
 
 <div class="example">
   <nav class="breadcrumbs">
@@ -155,6 +161,31 @@ For a service with a hierarchical structure, provide several levels in the bread
 
 In this case, we have linked the last item so the user can get back to the overview of archived tickets if a single archived ticket i displayed. To add the full title of the currently displayed ticket in the breadcrumbs will just create a very long list that warps on several lines on narrow devices, so it is better to keep it in the view heading only.
 
+### Web Application Breadcrumbs Related to Web Content
+A web application, such as an e-service, might be closely related to one or several presentation pages on the static content web site. The web page, or pages, on the web site itself might have breadcrumbs with a significant depth in the hierarchical structure. Do **not** replicate the full row of breadcrumbs on the web application. There are two important reasons for this:
+
+1. The web application might be presented and linked from several presentation web pages in different branches of the hierarchy. It is not always obvious witch on to use in the web application.
+2. Page names, structure and therefor URLs are often changed on the presentation web site. Links in the web applications breadcrumbs will often break if you use the full hierarchical breadcrumb row.
+
+If you establish an e-service with the name "Evenemangsbokning", ("Event booking"), use the following two node breadcrumb row:
+
+<div class="example">
+  <nav class="breadcrumbs">
+    <ol>
+      <li><a href="http://www.malmo.se/">Start</a></li>
+      <li><a href="/">Evenemangsbokning</a></li>
+    </ol>
+  </nav>
+</div>
+
+{% highlight html %}
+<nav class="breadcrumbs">
+  <ol>
+    <li><a href="http://www.malmo.se/">Start</a></li>
+    <li><a href="/">Evenemangsbokning</a></li>
+  </ol>
+</nav>
+{% endhighlight %}
 
 ## Pagination
 
@@ -173,7 +204,7 @@ In many cases, it's best to load more results with an Ajax request triggered by 
 {% endhighlight %}
 
 ### Classic Pagination
-You can use Bootstrap v3's markup if you have classic pagination. For lists like search results, it is often best to return 25 or 50 items per page.
+You can use Bootstrap v3's markup if you have classic pagination. For lists like search results, it is often best to return 50 items per page, not less, but sometimes more.
 
 <div class="example">
   <ul class="pagination">

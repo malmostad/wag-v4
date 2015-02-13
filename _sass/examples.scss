@@ -28,6 +28,13 @@ h2 + .example {
   aside.contact-us {
     margin-top: 0;
   }
+
+  nav.content,
+  nav.basic {
+    li {
+      font-size: emize(16);
+    }
+  }
 }
 
 .example::before, .highlight code::before {
