@@ -167,7 +167,7 @@ A web application, such as an e-service, might be closely related to one or seve
 1. The web application might be presented and linked from several presentation web pages in different branches of the hierarchy. It is not always obvious witch on to use in the web application.
 2. Page names, structure and therefor URLs are often changed on the presentation web site. Links in the web applications breadcrumbs will often break if you use the full hierarchical breadcrumb row.
 
-If you establish an e-service with the name "Evenemangsbokning", ("Event booking"), use the following two node breadcrumb row:
+If you establish an e-service with the name "Evenemangsbokning", use the following two node breadcrumb row:
 
 <div class="example">
   <nav class="breadcrumbs">
