@@ -61,7 +61,8 @@ There's always many aspects of a subject that can't be covered in guidelines. It
 ### Internal Applications
 Access to the intranet is required.
 
-* [My Page, Staff Directory, Site search](https://komin.malmo.se/) ([source code](https://github.com/malmostad/intranet-dashboard/))
+* [My Page, Staff Directory](https://komin.malmo.se/) ([source code](https://github.com/malmostad/intranet-dashboard/))
+* [Site search](https://s2.malmo.se/) ([source code](https://github.com/malmostad/sitesearch/))
 * [News](https://komin.malmo.se/nyheter) ([source code](https://github.com/malmostad/wp-apps/))
 * [Blogg](https://komin.malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
-* [CMS web site](https://komin.malmo.se/)
+* [CMS web site](https://komin.malmo.se/Var-kommun)
