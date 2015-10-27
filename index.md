@@ -62,6 +62,6 @@ There's always many aspects of a subject that can't be covered in guidelines. It
 Access to the intranet is required.
 
 * [My Page, Staff Directory, Site search](https://komin.malmo.se/) ([source code](https://github.com/malmostad/intranet-dashboard/))
-* [Blogg](https://komin.malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
 * [News](https://komin.malmo.se/nyheter) ([source code](https://github.com/malmostad/wp-apps/))
-* The CMS web site for the intrenet is not using WAG v4 yet, but they will use the same styling as the external web site (see above).
+* [Blogg](https://komin.malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
+* [CMS web site](https://komin.malmo.se/)
