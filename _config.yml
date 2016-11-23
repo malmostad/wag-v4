@@ -12,7 +12,7 @@ nav:
   - { title: 'Other Page Elements', url: '/other_page_elements/' }
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 exclude: []
 baseurl: /wag-v4
 cdn_url: //assets.malmo.se/external/v4
