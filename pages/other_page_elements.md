@@ -77,6 +77,29 @@ The "Visa på karta" (Show on map) link in the contact us box that creates an in
 
 `title="Föreningsgatan 7A"` Use the same value as for the `data-poi` attribute.
 
+<div class="example">
+  <p>Vi finns i stadhuset på August Palms plats 1
+    <a
+    href="http://malmo.se/karta?zoom=15&center=13.00732,55.59802&ol=adress&bl=stadskartan&config=../configs-1.0/malmo_atlas.js&poi=August%2520Palms%2520plats%25201,1"
+    class="show-on-map"
+    data-map-selector=".map-1"
+    data-poi="August Palms plats 1"
+    title="August Palms plats 1">(visa på karta)</a>.
+  </p>
+  <div class="inline-map map-1"></div>
+</div>
+
+{% highlight html %}
+<p>Vi finns i stadhuset på August Palms plats 1
+  <a
+  href="http://malmo.se/karta?zoom=15&center=13.00732,55.59802&ol=adress&bl=stadskartan&config=../configs-1.0/malmo_atlas.js&poi=August%2520Palms%2520plats%25201,1"
+  class="show-on-map"
+  data-map-selector=".map-1"
+  data-poi="August Palms plats 1"
+  title="August Palms plats 1">(visa på karta)</a>.
+</p>
+<div class="inline-map map-1"></div>
+{% endhighlight %}
 
 ## Boxes for Application Views
 This box is suitable for grouping information in an application. It has an optional context help function and a context menu in the titlebar you can use by supplying the markup in the example.
