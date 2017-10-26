@@ -396,7 +396,7 @@ $('#start-date').datepicker
 $("#street-address").autocomplete
   source: (request, response) ->
     $.ajax
-      url: "//xyz.malmo.se/rest/1.0/addresses/"
+      url: "//kartor.malmo.se/api/v1/addresses/"
       dataType: "jsonp"
       data:
         q: request.term
