@@ -44,19 +44,19 @@ The Github repository you will be assigned must be used for source code version 
 
 
 ## Browser Support
-See our [list of devices and browsers](http://malmo.se/wag) that web based services must support.
+See our [list of devices and browsers](https://malmo.se/wag) that web based services must support.
 
 
 ## Reference Applications
 There's always many aspects of a subject that can't be covered in guidelines. It requires skills and experience to build a user interface that is easy to use and looks good and to adapt guidelines in a good way. It will help checking out the following web applications that are using Global Assets v4. You will see how the guidelines are applied in the real world and how the different parts comes together.
 
 ### External Applications
-* [Site search](http://s1.malmo.se/?q=bibliotek) ([source code](https://github.com/malmostad/sitesearch))
-* [Hitta & jämför äldreboenden](http://webapps05.malmo.se/aldreboenden) ([source code](https://github.com/malmostad/nursing-homes))
-* [Blogg](http://malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
-* [CMS web site](http://malmo.se/)
+* [Site search](https://s1.malmo.se/?q=bibliotek) ([source code](https://github.com/malmostad/sitesearch))
+* [Hitta & jämför äldreboenden](https://webapps05.malmo.se/aldreboenden) ([source code](https://github.com/malmostad/nursing-homes))
+* [Blogg](https://malmo.se/blogg) ([source code](https://github.com/malmostad/wp-apps/))
+* [CMS web site](https://malmo.se/)
 * WAG v4, that is this documentation itself ([source code](https://github.com/malmostad/wag-external-v4)).
-* [Prototype pages](http://malmostad.github.io/prototypes/) ([source code](https://github.com/malmostad/prototypes))
+* [Prototype pages](https://malmostad.github.io/prototypes/) ([source code](https://github.com/malmostad/prototypes))
 
 ### Internal Applications
 Access to the intranet is required.

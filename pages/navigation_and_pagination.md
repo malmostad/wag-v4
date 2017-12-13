@@ -84,16 +84,16 @@ Use a relevant heading for the basic navigation.
 
 Our breadcrumbs are used to indicating the position of a web page in hierarchical content and to display the name of a service we provide. All breadcrumbs are placed below the masthead.
 
-The first position for external applications must always be "Start" (that is Swedish, literally) and must always be linked to http://malmo.se/, not to the single web application you provide.
+The first position for external applications must always be "Start" (that is Swedish, literally) and must always be linked to https://malmo.se/, not to the single web application you provide.
 
-For internal applications the first node most be "Komin" (the name of our Intranet) and must always be linked to http://komin.malmo.se/, not to the single web application you provide.
+For internal applications the first node most be "Komin" (the name of our Intranet) and must always be linked to https://komin.malmo.se/, not to the single web application you provide.
 
 ### Static Web Page Breadcrumbs
 
 <div class="example">
   <nav class="breadcrumbs">
     <ol>
-      <li><a href="http://malmo.se/">Start</a></li>
+      <li><a href="https://malmo.se/">Start</a></li>
       <li><a href="/miljo-hallbarhet">Miljö &amp; hållbarhet</a></li>
       <li><a href="/bostad-narmiljo">Bostad &amp; närmiljö</a></li>
       <li>Hälsotillsyn</li>
@@ -119,7 +119,7 @@ The last position "Nyheter" is the name of the service in the example below. It 
 <div class="example">
   <nav class="breadcrumbs">
     <ol>
-      <li><a href="http://komin.malmo.se/">Komin</a></li>
+      <li><a href="https://komin.malmo.se/">Komin</a></li>
       <li><a href="/">Nyheter</a></li>
     </ol>
   </nav>
@@ -128,7 +128,7 @@ The last position "Nyheter" is the name of the service in the example below. It 
 {% highlight html %}
 <nav class="breadcrumbs">
   <ol>
-    <li><a href="http://komin.malmo.se/">Komin</a></li>
+    <li><a href="https://komin.malmo.se/">Komin</a></li>
     <li><a href="/">Nyheter</a></li>
   </ol>
 </nav>
@@ -140,7 +140,7 @@ For a service with a hierarchical structure that doesn't provide a tailored navi
 <div class="example">
   <nav class="breadcrumbs">
     <ol>
-      <li><a href="http://malmo.se/">Start</a></li>
+      <li><a href="https://malmo.se/">Start</a></li>
       <li><a href="/">Kundtjänst</a></li>
       <li><a href="/tickets">Mina ärenden</a></li>
       <li><a href="/archived-tickets">Avslutade ärenden</a></li>
@@ -151,7 +151,7 @@ For a service with a hierarchical structure that doesn't provide a tailored navi
 {% highlight html %}
 <nav class="breadcrumbs">
   <ol>
-    <li><a href="http://malmo.se/">Start</a></li>
+    <li><a href="https://malmo.se/">Start</a></li>
     <li><a href="/">Kundtjänst</a></li>
     <li><a href="/tickets">Mina ärenden</a></li>
     <li><a href="/archived-tickets">Avslutade ärenden</a></li>
@@ -172,7 +172,7 @@ If you establish an e-service with the name "Evenemangsbokning", use the followi
 <div class="example">
   <nav class="breadcrumbs">
     <ol>
-      <li><a href="http://malmo.se/">Start</a></li>
+      <li><a href="https://malmo.se/">Start</a></li>
       <li><a href="/">Evenemangsbokning</a></li>
     </ol>
   </nav>
@@ -181,7 +181,7 @@ If you establish an e-service with the name "Evenemangsbokning", use the followi
 {% highlight html %}
 <nav class="breadcrumbs">
   <ol>
-    <li><a href="http://malmo.se/">Start</a></li>
+    <li><a href="https://malmo.se/">Start</a></li>
     <li><a href="/">Evenemangsbokning</a></li>
   </ol>
 </nav>

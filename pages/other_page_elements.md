@@ -30,7 +30,7 @@ Note: Be sure to use the correct Swedish format for phone numbers so mobile devi
 
       <h3 class="visiting-address v-0">Besöksadress</h3>
       <div class="street-address">Föreningsgatan 7A</div>
-      <div><a href="http://malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+      <div><a href="https://malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
       <div class="contact-us-map m-0"></div>
     </div>
   </aside>
@@ -54,7 +54,7 @@ Note: Be sure to use the correct Swedish format for phone numbers so mobile devi
 
     <h3 class="visiting-address v-0">Besöksadress</h3>
     <div class="street-address">Föreningsgatan 7A</div>
-    <div><a href="http://malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
+    <div><a href="https://malmo.se/karta?poi=Föreningsgatan+7A&amp;zoomlevel=4&amp;maptype=karta" class="show-on-map m-icon-location" data-map-selector=".contact-us-map.m-0" data-scroll-to=".visiting-address.v-0" data-poi="Föreningsgatan 7A" title="Föreningsgatan 7A">Visa på karta</a></div>
     <div class="contact-us-map m-0"></div>
   </div>
 </aside>
@@ -65,7 +65,7 @@ Note: Be sure to use the correct Swedish format for phone numbers so mobile devi
 
 The "Visa på karta" (Show on map) link in the contact us box that creates an inline map can be used in other contexts as well. You do not have to provide additional scripts for it to work, just specify the following attributes in an `<a>` element:
 
-`href` The URL that you can get by doing a manual address lookup at the [full map](http://malmo.se/karta) or programatically from our REST API, see the Autocomplete example in the [Forms]({{ site.baseurl}}/forms_buttons_and_messages) section. The address must be URL escaped.
+`href` The URL that you can get by doing a manual address lookup at the [full map](https://malmo.se/karta) or programatically from our REST API, see the Autocomplete example in the [Forms]({{ site.baseurl}}/forms_buttons_and_messages) section. The address must be URL escaped.
 
 `class="show-on-map"` Omit the `m-icon-location` class when the link is placed outside the Contact Us box.
 
@@ -80,7 +80,7 @@ The "Visa på karta" (Show on map) link in the contact us box that creates an in
 <div class="example">
   <p>Vi finns i stadhuset på August Palms plats 1
     (<a
-    href="http://malmo.se/karta?zoom=15&center=13.00732,55.59802&ol=adress&bl=stadskartan&config=../configs-1.0/malmo_atlas.js&poi=August%2520Palms%2520plats%25201,1"
+    href="https://malmo.se/karta?zoom=15&center=13.00732,55.59802&ol=adress&bl=stadskartan&config=../configs-1.0/malmo_atlas.js&poi=August%2520Palms%2520plats%25201,1"
     class="show-on-map"
     data-map-selector=".map-1"
     data-poi="August Palms plats 1"
@@ -92,7 +92,7 @@ The "Visa på karta" (Show on map) link in the contact us box that creates an in
 {% highlight html %}
 <p>Vi finns i stadhuset på August Palms plats 1
   (<a
-  href="http://malmo.se/karta?zoom=15&center=13.00732,55.59802&ol=adress&bl=stadskartan&config=../configs-1.0/malmo_atlas.js&poi=August%2520Palms%2520plats%25201,1"
+  href="https://malmo.se/karta?zoom=15&center=13.00732,55.59802&ol=adress&bl=stadskartan&config=../configs-1.0/malmo_atlas.js&poi=August%2520Palms%2520plats%25201,1"
   class="show-on-map"
   data-map-selector=".map-1"
   data-poi="August Palms plats 1"

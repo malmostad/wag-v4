@@ -1,7 +1,7 @@
 Web Application Guidelines v4
 ==============================
 
-Those guidelines for The City of Malmö’s web applications are available for reading at http://malmostad.github.io/wag-v4/. An overview of all available versions of the WAG for our external and intranet web service is available at http://malmostad.github.io/wag/.
+Those guidelines for The City of Malmö’s web applications are available for reading at https://malmostad.github.io/wag-v4/. An overview of all available versions of the WAG for our external and intranet web service is available at https://malmostad.github.io/wag/.
 
 ## Editing the Guidelines
 Content is written in markdown using the [kramdown](http://kramdown.rubyforge.org/syntax.html) dialect and the pages are found in the `pages` directory in the `gh-pages` branch. You can edit the pages in your web browser. Changes and new pages are queued for publishing when you save them and will most often be published immediately.
@@ -39,7 +39,7 @@ There are a few asset files used for the WAG itself. The source is available in 
 
 ## Build and Deploy
 
-Push the gh-pages branch to Github and the site will automatically be deployed to http://malmostad.github.io/wag-v4/
+Push the gh-pages branch to Github and the site will automatically be deployed to https://malmostad.github.io/wag-v4/
 
 ## Upgrade The Shared Assets
 See the instructions in our [shared assets](https://github.com/malmostad/shared_assets) repository.
