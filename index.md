@@ -34,6 +34,8 @@ The WAG describe how you use the Global Assets in an application to make it a co
 ## Register Your Web Application
 The first thing you must do when you start a project that will introduce a new web application at The City of Malmö, is to send webbteamet@malmo.se an email with a short description of the system, it's purpose and the name of the system administrator. By doing this, we will be able to contact the system administrator when new versions of the Global Assets are available and before older versions will be deprecated.
 
+## Use Encryption For All Content
+We care about our users privacy. Always use a SSL/TLS certificate on the server. Force all requests to use the `https:` protocol. This applies to all web content, not only when passwords etc. are transmitted. Redirects to `https:` must be done on the serverside. Be sure to avoid [mixed content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content) on pages.
 
 ## Source Code: License and Management
 Source code developed for the City of Malmö---it could be a full system, an extension to a system or a component---will be open source licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.txt) unless otherwise agreed in writing.
