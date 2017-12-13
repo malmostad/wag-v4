@@ -36,11 +36,11 @@ The first thing you must do when you start a project that will introduce a new w
 
 
 ## Source Code: License and Management
-Source code developed for the City of Malmö---it could be a full system, an extension to a system or a component---will be open source licensed under [AGPL 3.0](http://www.gnu.org/licenses/agpl-3.0.txt) unless otherwise agreed in writing.
+Source code developed for the City of Malmö---it could be a full system, an extension to a system or a component---will be open source licensed under [AGPL 3.0](https://www.gnu.org/licenses/agpl-3.0.txt) unless otherwise agreed in writing.
 
 Before you start development, contact webbteamet@malmo.se and so that we can create a repository for the application under [City of Malmö's Github organization](https://github.com/malmostad). Include the name of the application and Github usernames for the project members in the request.
 
-The Github repository you will be assigned must be used for source code version control during daily development and maintenance. Each deployed release of the source code must be tagged in your repository. Use [Semantic Versioning 2](http://semver.org/) for your release tags starting with a lowercase `v`, e.g. `v2.15.3`.
+The Github repository you will be assigned must be used for source code version control during daily development and maintenance. Each deployed release of the source code must be tagged in your repository. Use [Semantic Versioning 2](https://semver.org/) for your release tags starting with a lowercase `v`, e.g. `v2.15.3`.
 
 
 ## Browser Support

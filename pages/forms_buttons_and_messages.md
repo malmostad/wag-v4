@@ -6,7 +6,7 @@ permalink: /forms_buttons_and_messages/
 
 # {{ page.title }}
 
-We use the [Bootstrap v3](http://getbootstrap.com/) markup structure for forms with some additions to make them responsive without any non-semantic classes for the grid.
+We use the [Bootstrap v3](https://getbootstrap.com/) markup structure for forms with some additions to make them responsive without any non-semantic classes for the grid.
 
 To apply the styling to your forms, you need to set a `mf-v4` class somewhere *outside* the form. You can set it in the `body` element to have all your forms styled. Buttons will be styled based on their class names only and does not require the `mf-v4` scoping class name.
 
@@ -368,7 +368,7 @@ $('#start-date').datepicker
 {% endhighlight %}
 
 ### Autocomplete
-[jQueryUI Autocomplete](http://jqueryui.com/autocomplete/) is available in the Global Assets with custom styling. Here is a live example using City of Malmö's map service REST API.
+[jQueryUI Autocomplete](https://jqueryui.com/autocomplete/) is available in the Global Assets with custom styling. Here is a live example using City of Malmö's map service REST API.
 
 <div class="example">
   <form action="/" method="get">
